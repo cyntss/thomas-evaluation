@@ -16,56 +16,51 @@ header {
 	}
 }
 
-#dashboard {
+.dashboard {
 	width: 100%;
+}
+.container {
+	text-align: center;
+	padding: 6em;
+	color: @Turquoise;
+	.figure {
+		font-size: 5em;
+		font-weight: bold;
+	}
+	.caption {
+		font-size: 1.5em;
+	}
+}
+.cars {
+	display: flex;
 	.container {
-		text-align: center;
-		padding: 6em;
-		.figure, .caption {
-			color: @Turquoise;
-		}
-		.figure {
-			font-size: 5em;
-			font-weight: bold;
-		}
-		.caption{
-			font-size: 1.5em;
-		}
+		width: 50%;
 	}
-	#cars {
-		display: flex;
-		.container {
-			width: 50%;
+}
+.employees {
+	text-align: center;
+	position: relative;
+	.container {
+		display: inline-block;
+		padding: 6em 0;
+		width: auto;
+		&:before,&:after {
+			content: "";
+			position: absolute;
+			bottom:0;
+			width: 0;
+			height: 0;
+			border-style: solid;
 		}
-	}
-	#employees {
-		text-align: center;
-		position: relative;
-		.container {
-			display: inline-block;
-			padding: 6em 0;
-			width: auto;
-			&:before,&:after {
-				content: "";
-				position: absolute;
-				bottom:0;
-				width: 0;
-				height: 0;
-				border-style: solid;
-				
-				
-
-			}
-			&:before {
-				border-width: 15em 0 0 15em;
-				border-color: transparent transparent transparent @DarkSteel;
-				left: 0;
-			}
-			&:after {
-				right: 0;
-				border-width: 0 0 15em 15em;
-				border-color: transparent transparent @DarkSteel transparent;
-			}
+		&:before {
+			border-width: 15em 0 0 15em;
+			border-color: transparent transparent transparent @DarkSteel;
+			left: 0;
+		}
+		&:after {
+			right: 0;
+			border-width: 0 0 15em 15em;
+			border-color: transparent transparent @DarkSteel transparent;
 		}
 	}
 }
@@ -77,7 +72,8 @@ footer {
 	padding: @MainPagePadding;
 	display: flex;
 	background-color: @DarkSteel;
-	div {
+
+	.external-link {
 		width: 33.33333%;
 		background-color: @DarkSteel;
 		text-align: center;
@@ -87,9 +83,7 @@ footer {
 			border-right: 0 none;
 		}
 		&,a {
-			&,&:hover, &:visited {
-				color: @White;
-			}
+			color: @White;
 		}
 		a {
 			font-size: 2em;

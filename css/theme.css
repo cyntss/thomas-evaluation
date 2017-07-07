@@ -12,41 +12,41 @@ header a {
   display: inline-block;
   margin: 2em 10em;
 }
-#dashboard {
+.dashboard {
   width: 100%;
 }
-#dashboard .container {
+.container {
   text-align: center;
   padding: 6em;
 }
-#dashboard .container .figure,
-#dashboard .container .caption {
-  color: #2ad2c9;
+.container .figure,
+.container .caption {
+  color: #2AD2C9;
 }
-#dashboard .container .figure {
+.container .figure {
   font-size: 5em;
   font-weight: bold;
 }
-#dashboard .container .caption {
+.container .caption {
   font-size: 1.5em;
 }
-#dashboard #cars {
+.cars {
   display: flex;
 }
-#dashboard #cars .container {
+.cars .container {
   width: 50%;
 }
-#dashboard #employees {
+.employees {
   text-align: center;
   position: relative;
 }
-#dashboard #employees .container {
+.employees .container {
   display: inline-block;
   padding: 6em 0;
   width: auto;
 }
-#dashboard #employees .container:before,
-#dashboard #employees .container:after {
+.employees .container:before,
+.employees .container:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -54,15 +54,15 @@ header a {
   height: 0;
   border-style: solid;
 }
-#dashboard #employees .container:before {
+.employees .container:before {
   border-width: 15em 0 0 15em;
-  border-color: transparent transparent transparent #617d78;
+  border-color: transparent transparent transparent #617D78;
   left: 0;
 }
-#dashboard #employees .container:after {
+.employees .container:after {
   right: 0;
   border-width: 0 0 15em 15em;
-  border-color: transparent transparent #617d78 transparent;
+  border-color: transparent transparent #617D78 transparent;
 }
 footer {
   position: static;
@@ -70,29 +70,25 @@ footer {
   bottom: 0;
   padding: 2em 10em;
   display: flex;
-  background-color: #617d78;
+  background-color: #617D78;
 }
-footer div {
+footer .external-link {
   width: 33.33333%;
-  background-color: #617d78;
+  background-color: #617D78;
   text-align: center;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #fff;
   padding: 0 3em;
 }
-footer div:last-of-type {
+footer .external-link:last-of-type {
   border-right: 0 none;
 }
-footer div,
-footer div a,
-footer div:hover,
-footer div a:hover,
-footer div:visited,
-footer div a:visited {
-  color: #ffffff;
+footer .external-link,
+footer .external-link a {
+  color: #fff;
 }
-footer div a {
+footer .external-link a {
   font-size: 2em;
 }
-footer div .link_desc {
+footer .external-link .link_desc {
   padding-top: 1em;
 }
