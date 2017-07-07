@@ -1,5 +1,13 @@
 @import "lib.less";
 
+body {
+	color: @Black;
+}
+
+a {
+	display: inline-block;
+}
+
 header {
 	background-color: @Black;
 	a {
@@ -22,8 +30,24 @@ header {
 }
 
 footer {
+	padding: 2em 10em;
 	display: flex;
+	background-color: @DarkSteel;
 	div {
 		width: 33.33333%;
+		background-color: @DarkSteel;
+		text-align: center;
+		border-right: 1px solid @White;
+		&:last-of-type {
+			border-right: 0 none;
+		}
+		&,a {
+			&,&:hover {
+				color: @White;
+			}
+		}
+		a {
+			font-size: 2em;
+		}
 	}
 }

@@ -1,3 +1,9 @@
+body {
+  color: #333333;
+}
+a {
+  display: inline-block;
+}
 header {
   background-color: #333333;
 }
@@ -18,8 +24,25 @@ header a {
   width: 50%;
 }
 footer {
+  padding: 2em 10em;
   display: flex;
+  background-color: #617d78;
 }
 footer div {
   width: 33.33333%;
+  background-color: #617d78;
+  text-align: center;
+  border-right: 1px solid #ffffff;
+}
+footer div:last-of-type {
+  border-right: 0 none;
+}
+footer div,
+footer div a,
+footer div:hover,
+footer div a:hover {
+  color: #ffffff;
+}
+footer div a {
+  font-size: 2em;
 }
