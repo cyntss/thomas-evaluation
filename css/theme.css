@@ -35,6 +35,34 @@ header a {
 #dashboard #cars .container {
   width: 50%;
 }
+#dashboard #employees {
+  text-align: center;
+  position: relative;
+}
+#dashboard #employees .container {
+  display: inline-block;
+  padding: 6em 0;
+  width: auto;
+}
+#dashboard #employees .container:before,
+#dashboard #employees .container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+#dashboard #employees .container:before {
+  border-width: 15em 0 0 15em;
+  border-color: transparent transparent transparent #617d78;
+  left: 0;
+}
+#dashboard #employees .container:after {
+  right: 0;
+  border-width: 0 0 15em 15em;
+  border-color: transparent transparent #617d78 transparent;
+}
 footer {
   position: static;
   left: 0;

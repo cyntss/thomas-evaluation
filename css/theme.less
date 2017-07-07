@@ -37,6 +37,36 @@ header {
 			width: 50%;
 		}
 	}
+	#employees {
+		text-align: center;
+		position: relative;
+		.container {
+			display: inline-block;
+			padding: 6em 0;
+			width: auto;
+			&:before,&:after {
+				content: "";
+				position: absolute;
+				bottom:0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				
+				
+
+			}
+			&:before {
+				border-width: 15em 0 0 15em;
+				border-color: transparent transparent transparent @DarkSteel;
+				left: 0;
+			}
+			&:after {
+				right: 0;
+				border-width: 0 0 15em 15em;
+				border-color: transparent transparent @DarkSteel transparent;
+			}
+		}
+	}
 }
 
 footer {
