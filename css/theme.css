@@ -36,6 +36,9 @@ header a {
   width: 50%;
 }
 footer {
+  position: static;
+  left: 0;
+  bottom: 0;
   padding: 2em 10em;
   display: flex;
   background-color: #617d78;
@@ -45,6 +48,7 @@ footer div {
   background-color: #617d78;
   text-align: center;
   border-right: 1px solid #ffffff;
+  padding: 0 3em;
 }
 footer div:last-of-type {
   border-right: 0 none;
@@ -59,4 +63,7 @@ footer div a:visited {
 }
 footer div a {
   font-size: 2em;
+}
+footer div .link_desc {
+  padding-top: 1em;
 }
