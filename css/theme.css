@@ -1,0 +1,18 @@
+#dashboard {
+  width: 100%;
+}
+#dashboard .container {
+  text-align: center;
+}
+#dashboard #cars {
+  display: flex;
+}
+#dashboard #cars .container {
+  width: 50%;
+}
+footer {
+  display: flex;
+}
+footer div {
+  width: 33.33333%;
+}
