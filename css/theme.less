@@ -12,7 +12,7 @@ header {
 	background-color: @Black;
 	a {
 		display: inline-block;
-		margin: 2em 10em;
+		margin: @MainPagePadding;
 	}
 }
 
@@ -20,6 +20,17 @@ header {
 	width: 100%;
 	.container {
 		text-align: center;
+		padding: 6em;
+		.figure, .caption {
+			color: @Turquoise;
+		}
+		.figure {
+			font-size: 5em;
+			font-weight: bold;
+		}
+		.caption{
+			font-size: 1.5em;
+		}
 	}
 	#cars {
 		display: flex;
@@ -30,7 +41,7 @@ header {
 }
 
 footer {
-	padding: 2em 10em;
+	padding: @MainPagePadding;
 	display: flex;
 	background-color: @DarkSteel;
 	div {
@@ -42,7 +53,7 @@ footer {
 			border-right: 0 none;
 		}
 		&,a {
-			&,&:hover {
+			&,&:hover, &:visited {
 				color: @White;
 			}
 		}

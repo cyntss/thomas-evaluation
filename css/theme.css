@@ -16,6 +16,18 @@ header a {
 }
 #dashboard .container {
   text-align: center;
+  padding: 6em;
+}
+#dashboard .container .figure,
+#dashboard .container .caption {
+  color: #2ad2c9;
+}
+#dashboard .container .figure {
+  font-size: 5em;
+  font-weight: bold;
+}
+#dashboard .container .caption {
+  font-size: 1.5em;
 }
 #dashboard #cars {
   display: flex;
@@ -40,7 +52,9 @@ footer div:last-of-type {
 footer div,
 footer div a,
 footer div:hover,
-footer div a:hover {
+footer div a:hover,
+footer div:visited,
+footer div a:visited {
   color: #ffffff;
 }
 footer div a {
